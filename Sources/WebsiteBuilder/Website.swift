@@ -14,12 +14,11 @@ public final class Website<Responder: HTTPResponder> {
     }
     
     /// Runs the website until the server's socket is closed
-    public func run() throws {
+    public func run(port: Int) throws {
         // The host and port to which the webserver will bind
         // ::1 can usually be accessed as `localhost`
         // The difference is that `::1` is also available from other computers
         let host = "::1"
-        let port = 8080
         
         let bootstrap = ServerBootstrap(group: group)
             // Specifies that we can have 256 TCP sockets waiting to be accepted for processing at a given time
