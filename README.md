@@ -1,1 +1,3 @@
-# spm-tutorial
+# SPM
+
+A description of this package.
