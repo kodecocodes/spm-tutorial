@@ -19,7 +19,7 @@ public final class Website<Responder: HTTPResponder> {
         // ::1 can usually be accessed as `localhost`
         // The difference is that `::1` is also available from other computers
         let host = "::1"
-        let port = 8080
+        let port = 80
         
         let bootstrap = ServerBootstrap(group: group)
             // Specifies that we can have 256 TCP sockets waiting to be accepted for processing at a given time
